@@ -5,10 +5,6 @@ module.exports = {
   ],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {
-      backgroundImage: theme => ({
-        'house-image': "url('./img/house.png')"
-      })
     },
     screens: {
       sm: '640px',
@@ -27,8 +23,7 @@ module.exports = {
         xl: '1140px',
         xxl: '1400px',
       },
-    }
-  },
+    },
   variants: {
     extend: {},
   },
