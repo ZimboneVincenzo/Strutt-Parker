@@ -2,183 +2,1399 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
-  
-    <script type="module" src="/main.js"></script>
-    <title>Vite App</title>
+    <!--<link rel="stylesheet" href="./style.css" />-->
+
+    <script type="module" defer src="/main.js"></script>
+    <title>Strutt&Parker</title>
   </head>
   <body>
-
-  <section class="container mx-auto px-4">
-        <div class="flex justify-between items-center">
-          <div class="relative h-16 w-32 bg-indigo-500">
-            <img class="absolute ml-5 mt-10" src="./img/&.png" alt="">
-            <img class="absolute ml-8 mt-5" src="./img/Shape.png" alt="">
-          </div>
-          <div class="flex flex-col justify-around w-5 h-6">
-            <span class="w-full h-0.5 bg-gray-300"></span>
-            <span class="w-full h-0.5 bg-gray-300"></span>
-            <span class="w-full h-0.5 bg-gray-300"></span>
-          </div>
+    <nav class="container">
+      <div class="flex justify-between items-center">
+        <div class="relative h-16 w-32 bg-icon-nav">
+          <img class="absolute ml-5 mt-10" src="./img/&.png" alt="" />
+          <img class="absolute ml-8 mt-5" src="./img/Shape.png" alt="" />
         </div>
-  </section>
+
+        <!--Mobile-->
+        <div class="flex flex-col justify-around w-5 h-6 lg:hidden">
+          <span class="w-full h-0.5 bg-menu-nav"></span>
+          <span class="w-full h-0.5 bg-menu-nav"></span>
+          <span class="w-full h-0.5 bg-menu-nav"></span>
+        </div>
+
+        <!--Desktop-->
+
+        <div class="flex items-center hidden lg:block">
+          <ul class="flex items-center">
+            <li class="lg:mr-7 xl:mr-10">Property Search</li>
+            <li class="lg:mr-7 xl:mr-10">Services</li>
+            <li class="lg:mr-7 xl:mr-10">People</li>
+            <li class="lg:mr-7 xl:mr-10">People</li>
+            <li class="lg:mr-7 xl:mr-10">About S&P</li>
+            <li class="lg:mr-7 xl:mr-10">More...</li>
+            <li><img src="./img/Group 4.png" alt="" /></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
     <section class="container mx-auto px-4">
-      <div class="flex flex-col justify-between items-center">
-
+      <!--div class="grid grid-rows-6 grid-cols-6 "-->
+      <div class="flex flex-col justify-between">
         <div class="flex flex-col justify-between items-center mt-14">
           <h2>Your perfect search starts here</h2>
-          <p>Find your perfect house, residential property, commercial building, farm, estate or piece of land.</p>
+          <p>
+            Find your perfect house, residential property, commercial building,
+            farm, estate or piece of land.
+          </p>
         </div>
 
-        
         <div class="flex flex-col justify-between items-center mt-14">
-          <input type="text" class="h-12 w-64 border border-gray-300 rounded-t-lg ">
-          <div class="grid grid-cols-2 divide-x-2 border-gray-300  h-12 w-64 border rounded-none">
+          <input
+            type="text"
+            class="h-12 w-64 border border-gray-300 rounded-t-lg"
+          />
+          <div
+            class="
+              grid grid-cols-2
+              divide-x-2
+              border-gray-300
+              h-12
+              w-64
+              border
+              rounded-none
+            "
+          >
             <div>1</div>
             <div>2</div>
           </div>
-          <div class="h-12 w-64 border rounded-b-lg bg-red-500 "></div>
+          <div class="h-12 w-64 border rounded-b-lg bg-red-500"></div>
         </div>
 
-          <div class="flex flex-col lg:flex-row justify-between items-center mt-14">
-
-            <div class="relative w-72 h-36 rounded-lg shadow-xl mb-8">
-              <img src="./img/house.png" class="absolute bg-cover"  title="house image">
-              <div class="absolute flex flex-col items-center w-64 h-16 mt-16 ml-4 bg-white rounded-lg ">
-                  <p class="pt-2.5">Residential Property Search</p>
-                  <div class="grid grid-cols-2 gap-x-20">
-                    <div>
-                      <label for="">Sales</label>
-                      <span></span>
-                    </div>
-                    <div>
-                      <label for="">lettings</label>
-                      <span></span>
-                    </div>
-                  </div>
-              </div>
-            </div>
-
-            <div class=" bg-cover relative w-72 h-36 rounded-lg shadow-xl mb-8" style="background-image: url('./img/countryside.png');">
-              <div class="absolute flex flex-col items-center w-64 h-16 mt-16 ml-4 bg-white rounded-lg ">
-                  <p class="pt-2.5">Estates, Farms and Land</p>
-                  <div class="grid grid-cols-2 gap-x-20">
-                    <div>
-                      <label for="">Sales</label>
-                      <span></span>
-                    </div>
-                    <div>
-                      <label for="">lettings</label>
-                      <span></span>
-                    </div>
-                  </div>
-              </div>
-            </div>
-            <div class=" bg-cover relative w-72 h-36 rounded-lg shadow-xl mb-8" style="background-image: url('./img/city.png');">
-              <div class="absolute flex flex-col items-center w-64 h-16 mt-16 ml-4 bg-white rounded-lg ">
-                  <p class="pt-2.5">New Homes Developments</p>
-                  <div class="grid grid-cols-1 gap-x-20">
-                    <div>
-                      <label for="">Sales</label>
-                      <span></span>
-                    </div>
-                  
-                  </div>
-              </div>
-            </div>
-            <div class=" bg-cover relative w-72 h-36 rounded-lg shadow-xl mb-8" style="background-image: url('./img/above.png');">
-              <div class="absolute flex flex-col items-center w-64 h-16 mt-16 ml-4 bg-white rounded-lg ">
-                  <p class="pt-2.5">Development Land</p>
-                  <div class="grid grid-cols-1 gap-x-20">
-                    <div>
-                      <label for="">Sales</label>
-                      <span></span>
-                    </div>     
-                  </div>
+        <div
+          class="
+            grid grid-rows-4 grid-cols-6
+            sm:grid-rows-2 sm:grid-cols-12
+            xl:grid-rows-1 xl:grid-cols-12
+            gap-y-8
+            sm:gap-x-2 sm:gap-y-2
+            xl:gap-y-2
+            justify-between
+            items-center
+            mt-14
+          
+          "
+        >
+          <div
+            class="
+              row-start-1 row-end-1
+              sm:row-start-1 sm:row-end-1
+              xl:row-start-1 xl:row-end-1
+              col-start-1 col-end-7
+              sm:col-start-1 sm:col-end-7
+              xl:col-start-1 xl:col-end-4
+              w-full
+              h-36
+              xl:h-80
+              rounded-lg
+              shadow-xl
+              bg-house-img bg-cover
+              flex
+              items-center
+              xl:items-end
+              justify-center
+            "
+          >
+            <!--<img src="./img/house.png" class="absolute bg-cover"  title="house image">-->
+            <div
+              class="
+                
+                flex flex-col
+                items-center
+                w-64
+                max-h-60
+                mt-16
+                xl:mb-6
+                bg-white
+                rounded-lg
+              "
+            >
+              <p class="pt-2.5">Residential Property Search</p>
+              <p class="pt-2.5 hidden xl:block">Find your perfect home.</p>
+              <div class="grid grid-cols-2 gap-x-20">
+                <div>
+                  <label for="">Sales</label>
+                  <span></span>
+                </div>
+                <div>
+                  <label for="">lettings</label>
+                  <span></span>
+                </div>
               </div>
             </div>
           </div>
 
+          <div
+            class="
+              row-start-2 row-end-2
+              sm:row-start-1 sm:row-end-1
+              xl:row-start-1 xl:row-end-1
+              col-start-1 col-end-7
+              sm:col-start-7 sm:col-end-13
+              xl:col-start-4 xl:col-end-7
+              relative
+              w-full
+              h-36
+              xl:h-80
+              rounded-lg
+              shadow-xl
+              bg-countryside-img bg-cover
+              flex
+              items-center
+              xl:items-end
+              justify-center
+            "
+          >
+            <div
+              class="
+                absolute
+                flex flex-col
+                items-center
+                w-64
+                max-h-60
+                mt-16
+                xl:mb-6
+                bg-white
+                rounded-lg
+              "
+            >
+              <p class="pt-2.5">Estates, Farms and Land</p>
+              <p class="pt-2.5 hidden xl:block">Country estates, arable farms, and development land.</p>
+              <div class="grid grid-cols-2 gap-x-20">
+                <div>
+                  <label for="">Sales</label>
+                  <span></span>
+                </div>
+                <div>
+                  <label for="">lettings</label>
+                  <span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="
+              row-start-3 row-end-3
+              sm:row-start-2 sm:row-end-2
+              xl:row-start-1 xl:row-end-1
+              col-start-1 col-end-7
+              sm:col-start-1 sm:col-end-7
+              xl:col-start-7 xl:col-end-10
+              bg-city 
+              bg-cover
+              relative
+              w-full
+              h-36
+              xl:h-80
+              rounded-lg
+              shadow-xl
+              flex
+              items-center
+              xl:items-end
+              justify-center
+            "
+          >
+            <div
+              class="
+                absolute
+                flex flex-col
+                items-center
+                w-64
+                max-h-60
+                mt-16
+                xl:mb-6
+                bg-white
+                rounded-lg
+              "
+            >
+              <p class="pt-2.5">New Homes Developments</p>
+              <p class="pt-2.5 hidden xl:block">Browse our Developments of New Homes</p>
+              <div class="grid grid-cols-1 gap-x-20">
+                <div>
+                  <label for="">Sales</label>
+                  <span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="
+              row-start-4 row-end-4
+              sm:row-start-2 sm:row-end-2
+              xl:row-start-1 xl:row-end-1
+              col-start-1 col-end-6
+              sm:col-start-7 sm:col-end-13
+              xl:col-start-10 xl:col-end-13
+              row-start-4 row-end-4
+              col-start-1 col-end-7
+              bg-above bg-cover
+              relative
+              w-full
+              h-36
+              xl:h-80
+              rounded-lg
+              shadow-xl
+              flex
+              items-center
+              xl:items-end
+              justify-center
+            "
+          >
+            <div
+              class="
+                absolute
+                flex flex-col
+                items-center
+                w-64
+                max-h-60
+                mt-16
+                xl:mb-6
+                bg-white
+                rounded-lg
+              "
+            >
+              <p class="pt-2.5">Development Land</p>
+              <p class="pt-2.5 hidden xl:block">Browse our Developments of New Homes</p>
+              <div class="grid grid-cols-1 gap-x-20">
+                <div>
+                  <label for="">Sales</label>
+                  <span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-          <div class="flex flex-col w-72 p-6 shadow-2xl">
-            <h2 class="mb-6 text-xl leading-7 text-left ">Report an issue on your property</h2>
-            <p class="mb-2.5 text-base leading-7 text-left ">It was a humorously perilous business for both of us. For, before we proceed further, it must be said that the monkey-rope was fast at both ends.</p>
-            <div class="flex justify-center w-44 h-12 bg-yellow-900 rounded-lg">
-              <label for="" class="self-center ">report now</label>
+        <hr class="mt-10">
+
+        <div class="flex flex-col xl:flex-row items-center">
+          <div class="flex flex-col xl:flex-row w-72 sm:w-full p-6 shadow-2xl mt-10">
+            <div class="flex flex-col xl:flex-row">
+              <h2 class="mb-6 text-xl leading-7 text-left">
+                Report an issue on your property
+              </h2>
+              <p class="mb-2.5 text-base leading-7 text-left">
+                It was a humorously perilous business for both of us. For, before
+                we proceed further, it must be said that the monkey-rope was fast
+                at both ends.
+              </p>
+            </div>
+            <div class="flex justify-center w-44 h-12 rounded-lg bg-btn-report">
+              <label for="" class="self-center">report now</label>
               <span></span>
             </div>
           </div>
-
+        </div>
       </div>
     </section>
 
-    <footer class="bg-gray-400">
+    <section class="container mx-auto px-4">
+
+      <h3 class=" my-6 sm:hidden">Highlighted</h3>
+
+      <div class=" grid grid-rows-3 grid-cols-6
+      sm:grid-rows-1 sm:grid-cols-12
+      xl:grid-rows-1 xl:grid-cols-12
+      gap-y-8
+      sm:gap-x-2 sm:gap-y-2
+      xl:gap-y-2
+      justify-between items-center my-10">
+       
+
+        <!--card 1-->
+        <div class="row-start-1 row-end-1
+        sm:row-start-1 sm:row-end-1
+        xl:row-start-1 xl:row-end-1
+        col-start-1 col-end-7
+        sm:col-start-1 sm:col-end-5
+        xl:col-start-1 xl:col-end-5
+        w-full  shadow-2xl rounded-lg">
+          <div class="w-full h-full">
+            <img
+              class="object-cover w-full h-full rounded-t-lg"
+              src="./img/interior-house.png"
+              alt="interior house"
+            />
+          </div>
+          <div class="p-3">
+            <div class="flex flex-col">
+              <h3 class="mb-3.5">Chester Square, Belgravia, London</h3>
+              <p class="pb-2.5 border-b-2">
+                One of the most impressive newly refurbished houses in Belgravia
+                with a lift and a double garage.
+              </p>
+            </div>
+
+            <div class="flex flex-row justify-between mt-5">
+              <p>Price On Application</p>
+              <span>POA</span>
+            </div>
+          </div>
+        </div>
+        <!--//card 1//-->
+
+        <!--card 2-->
+        <div class="row-start-2 row-end-2
+        sm:row-start-1 sm:row-end-1
+        xl:row-start-1 xl:row-end-1
+        col-start-1 col-end-7
+        sm:col-start-5 sm:col-end-9
+        xl:col-start-5 xl:col-end-9
+        shadow-2xl rounded-lg">
+          <div class="w-full h-full">
+            <img
+              class="object-cover w-full h-full rounded-t-lg"
+              src="./img/interior-classic.png"
+              alt="interior house"
+            />
+          </div>
+          <div class="p-3">
+            <div class="flex flex-col">
+              <h3 class="mb-3.5">Lygon Place London</h3>
+              <p class="pb-2.5 border-b-2">
+                A grand seven bedroom period townhouse with a lift, underground
+                parking and porterage in Belgravia
+              </p>
+            </div>
+
+            <div class="flex flex-row justify-between mt-5">
+              <p>Guide price</p>
+              <span>£ 21,500,000</span>
+            </div>
+          </div>
+        </div>
+        <!--//card 2//-->
+
+        <!--card 3-->
+        <div class="row-start-3 row-end-3
+        sm:row-start-1 sm:row-end-1
+        xl:row-start-1 xl:row-end-1
+        col-start-1 col-end-7
+        sm:col-start-9 sm:col-end-13
+        xl:col-start-9 xl:col-end-13
+        w-full shadow-2xl rounded-lg">
+          <div class="w-full h-full">
+            <img
+              class="object-cover w-full h-full rounded-t-lg"
+              src="./img/external-office.png"
+              alt="interior house"
+            />
+          </div>
+          <div class="p-3">
+            <div class="relative flex flex-col border-b-2">
+              <h3 class="mb-3.5">
+                Kensington Palace Gardens, Kensington, London
+              </h3>
+              <p class="pb-2.5">
+                A very special five bedroom apartment with parking, terrace,
+                communal garden and porteragee.
+              </p>
+              <div
+                class="
+                  absolute
+                  flex
+                  justify-center
+                  items-center
+                  -bottom-3
+                  right-0
+                  w-24
+                  h-5
+                  rounded-full
+                  py-3
+                  px-6
+                  bg-icon-nav
+                "
+              >
+                <p class="absolute text-xs uppercase">under offer</p>
+              </div>
+            </div>
+
+            <div class="flex flex-row justify-between mt-5">
+              <p>Asking Price</p>
+              <span>£ 19,750,000</span>
+            </div>
+          </div>
+        </div>
+        <!--//card 3//-->
+      </div>
+    </section>
+
+    <section class="bg-knowledge">
       <div class="container mx-auto px-4">
 
-        <div class="flex flex-col">
-              <div class="mb-10 mt-10">
-                <ul>
-                  <li class="mb-5">Quick actions</li>
-                  <li>Buy</li>
-                  <li>Rent</li>
-                  <li>Sell</li>
-                  <li>Let</li>
-                  <li>Commercial</li>
-                </ul>
-              </div>
-              <div class="flex flex-col mb-10">
-                <ul>
-                  <li class="mb-5">Strutt & Parker</li>
-                  <li>Property Search</li>
-                  <li>Services</li>
-                  <li>People</li>
-                  <li>Offices</li>
-                  <li>Knowledge & Research</li>
-                </ul>
-                <ul>
-                
-                  <li>Pubblications</li>
-                  <li>Careers</li>
-                  <li>Know your customer</li>
-                  <li>Contact</li>
-                </ul>
-              </div>
-              <div class="mb-10">
-                <ul>
-                  <li class="mb-5">Other</li>
-                  <li>Contact</li>
-                  <li>Privacy Policy</li>
-                  <li>Accessibility policy</li>
-                  <li>Sitemap</li>
-                  <li>Cookie policy</li>
-                </ul>
-              </div>
-          </div>
+        <div class="flex flex-col pt-8 mb-8">
+          <h3>Knowledge & Research</h3>
+          <p>Our latest research and thoughts on the property market.</p>
+        </div>
 
-              <div class="flex flex-col border-b-2">
-                <div class="relative w-32 h-6">
-                  <img class="absolute bg-cover" src="./img/CIRE_New_logo_No_Line_No_box-Black.png" alt="logo">
-                </div>
-                <div class="relative  w-32 h-6 mb-10">
-                  <img class="absolute" src="./img/otm.png" alt="">
-                </div>
-              </div>
+        <div class=" 
+        grid 
+        grid-rows-4 grid-cols-6
+        sm:grid-rows-2 sm:grid-cols-12
+        xl:grid-rows-1 xl:grid-cols-12
+        gap-y-8
+        sm:gap-x-2 sm:gap-y-2
+        xl:gap-y-2
+        pb-8">
+          
 
+          <!--card 1-->
+          <div class="row-start-1 row-end-1
+          sm:row-start-1 sm:row-end-1
+          xl:row-start-1 xl:row-end-1
+          col-start-1 col-end-7
+          sm:col-start-1 sm:col-end-7
+          xl:col-start-1 xl:col-end-4
+          w-full
+           shadow-2xl rounded-lg mt-10">
+            <div class="relative flex h-36">
+              <img
+                class="absolute object-cover w-full h-full rounded-t-lg"
+                src="./img/camera.png"
+                alt="camera"
+              />
+            </div>
+            <div class="p-3">
               <div class="flex flex-col">
-                <div class="mb-10 mt-10">
-                  <ul class="flex flex-col">
-                    <li class="mb-12">© Strutt & Parker 2018</li>
-                    <li><div class="w-28 h-7 bg-white"></div></li>
-                  </ul>
-                </div>
+                <h3 class="mb-3.5">bg-countryside bg-cover</h3>
+                <p class="pb-2.5 border-b-2">3rd August 2018</p>
               </div>
 
+              <div class="grid grid-rows-2 grid-cols-2 gap-x-2 gap-y-2 mt-5">
+                <div
+                  class="
+                    row-start-1 row-end-1
+                    col-start-1 col-end-1
+                    w-20
+                    bg-knowdiv
+                    rounded-md
+                    text-center text-xs
+                    uppercase
+                  "
+                >
+                  culture
+                </div>
+                <div
+                  class="
+                    row-start-1 row-end-1
+                    col-start-2 col-end-2
+                    w-20
+                    bg-knowdiv
+                    rounded-md
+                    text-center text-xs
+                    uppercase
+                  "
+                >
+                  residential
+                </div>
+                <div
+                  class="
+                    row-start-2 row-end-2
+                    col-start-1 col-end-1
+                    w-20
+                    bg-knowdiv
+                    rounded-md
+                    text-center text-xs
+                    uppercase
+                  "
+                >
+                  touris
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--//card 1//-->
+
+          <!--card 2-->
+          <div class="row-start-2 row-end-2
+          sm:row-start-1 sm:row-end-1
+          xl:row-start-1 xl:row-end-1
+          col-start-1 col-end-7
+          sm:col-start-7 sm:col-end-13
+          xl:col-start-4 xl:col-end-7
+          w-full
+           shadow-2xl rounded-lg">
+            <div class="relative flex h-36">
+              <img
+                class="absolute object-cover w-full h-full rounded-t-lg"
+                src="./img/front_house.png"
+                alt="interior house"
+              />
+            </div>
+            <div class="p-3">
+              <div class="flex flex-col">
+                <h3 class="mb-3.5">
+                  Focus on Battersea - The Pros of Life in Battersea
+                </h3>
+                <p class="pb-2.5 border-b-2">3rd August 2018</p>
+              </div>
+
+              <div class="grid grid-rows-2 grid-cols-2 gap-x-2 gap-y-2 mt-5">
+                <div
+                  class="
+                    row-start-1 row-end-1
+                    col-start-1 col-end-1
+                    w-20
+                    bg-knowdiv
+                    rounded-md
+                    text-center text-xs
+                    uppercase
+                  "
+                >
+                  city living
+                </div>
+                <div
+                  class="
+                    row-start-1 row-end-1
+                    col-start-2 col-end-2
+                    w-20
+                    bg-knowdiv
+                    rounded-md
+                    text-center text-xs
+                    uppercase
+                  "
+                >
+                  london
+                </div>
+                <div
+                  class="
+                    row-start-2 row-end-2
+                    col-start-1 col-end-1
+                    w-20
+                    bg-knowdiv
+                    rounded-md
+                    text-center text-xs
+                    uppercase
+                  "
+                >
+                  residential
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--//card 2//-->
+
+          <!--card 3-->
+          <div class="row-start-3 row-end-3
+          sm:row-start-2 sm:row-end-2
+          xl:row-start-1 xl:row-end-1
+          col-start-1 col-end-7
+          sm:col-start-1 sm:col-end-7
+          xl:col-start-7 xl:col-end-10
+          w-full
+           shadow-2xl rounded-lg">
+            <div class="relative flex h-36">
+              <img
+                class="absolute object-cover w-full h-full rounded-t-lg"
+                src="./img/grain.png"
+                alt="interior house"
+              />
+            </div>
+            <div class="p-3">
+              <div class="flex flex-col">
+                <h3 class="mb-3.5">Scottish Farming Update | Summer 2018</h3>
+                <p class="pb-2.5 border-b-2">3rd August 2018</p>
+              </div>
+
+              <div class="grid grid-rows-2 grid-cols-2 gap-x-2 gap-y-2 mt-5">
+                <div
+                  class="
+                    row-start-1 row-end-1
+                    col-start-1 col-end-1
+                    w-20
+                    bg-knowdiv
+                    rounded-md
+                    text-center text-xs
+                    uppercase
+                  "
+                >
+                  farming
+                </div>
+                <div
+                  class="
+                    row-start-1 row-end-1
+                    col-start-2 col-end-2
+                    w-20
+                    bg-knowdiv
+                    rounded-md
+                    text-center text-xs
+                    uppercase
+                  "
+                >
+                  farming update
+                </div>
+                <div
+                  class="
+                    row-start-2 row-end-2
+                    col-start-1 col-end-1
+                    w-20
+                    bg-knowdiv
+                    rounded-md
+                    text-center text-xs
+                    uppercase
+                  "
+                >
+                  rural
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--//card 3//-->
+
+          <!--card 4-->
+          <div class="row-start-4 row-end-4
+          sm:row-start-2 sm:row-end-2
+          xl:row-start-1 xl:row-end-1
+          col-start-1 col-end-7
+          sm:col-start-7 sm:col-end-13
+          xl:col-start-10 xl:col-end-13
+          w-full
+           shadow-2xl rounded-lg">
+            <div class="relative flex h-36">
+              <img
+                class="absolute object-cover w-full h-full rounded-t-lg"
+                src="./img/cottage.png"
+                alt="interior house"
+              />
+            </div>
+            <div class="p-3">
+              <div class="flex flex-col">
+                <h3 class="mb-3.5">The rise of the British Vineyard</h3>
+                <p class="pb-2.5 border-b-2">3rd August 2018</p>
+              </div>
+
+              <div class="grid grid-rows-2 grid-cols-2 gap-x-2 gap-y-2 mt-5">
+                <div
+                  class="
+                    row-start-1 row-end-1
+                    col-start-1 col-end-1
+                    w-20
+                    bg-knowdiv
+                    rounded-md
+                    text-center text-xs
+                    uppercase
+                  "
+                >
+                  Residential
+                </div>
+                <div
+                  class="
+                    row-start-1 row-end-1
+                    col-start-2 col-end-2
+                    w-20
+                    bg-knowdiv
+                    rounded-md
+                    text-center text-xs
+                    uppercase
+                  "
+                >
+                  rural
+                </div>
+                <div
+                  class="
+                    row-start-2 row-end-2
+                    col-start-1 col-end-1
+                    w-20
+                    bg-knowdiv
+                    rounded-md
+                    text-center text-xs
+                    uppercase
+                  "
+                >
+                  viticulture
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--//card 4//-->
+        </div>
+      </div>
+      
+      <div class="flex justify-end p-8 mb-8">
+        <h3>Read all <span>></span></h3>
+      </div>
+    </section>
+
+
+    <section class="container mx-auto px-4">
+
+      <div class="flex justify-start p-8 mb-8">
+        <h3>News and events &nbsp <h5>Read all<span> ></span></h5></h3>
+      </div>
+
+      <div class="grid mincontent5row grid-cols-6 sm:mincontent5row sm:grid-cols-6 xl:mincontent3row xl:grid-cols-12 gap-y-8 pb-8" >
+
+        <div class="row-start-1 row-end-1 col-start-1 col-end-7 sm:row-start-1 sm:row-end-1 sm:col-start-1 sm:col-end-7 
+        xl:row-start-1 xl:row-end-1 
+        xl:col-start-1 xl:col-end-9
+        shadow-2xl p-5">
+          <p class="mb-5">08 MAY 2018 &#8226 NEWS</p>
+          <h3 class="mb-5">Strutt & Parker Appoints Rupert Wiggin new Head of Sales at Kensington</h3>
+          <p>After 25 years working in London, Rupert is returning to his roots in the country to test his skills in a different market.</p>
+
+        </div>
+        <div class="row-start-2 row-end-2 col-start-1 col-end-7 sm:row-start-2 sm:row-end-2 sm:col-start-1 sm:col-end-7
+        xl:row-start-2 xl:row-end-2 
+        xl:col-start-1 xl:col-end-9
+        shadow-2xl p-5">
+          <p class="mb-5">08 MAY 2018 &#8226 NEWS</p>
+          <h3 class="mb-5">Strutt & Parker Appoints Rupert Wiggin new Head of Sales at Kensington</h3>
+          <p>After 25 years working in London, Rupert is returning to his roots in the country to test his skills in a different market.</p>
+        </div>
+        <div class="row-start-3 row-end-3 col-start-1 col-end-7 sm:row-start-3 sm:row-end-3 sm:col-start-1 sm:col-end-7 
+        xl:row-start-3 xl:row-end-3 
+        xl:col-start-1 xl:col-end-9
+        shadow-2xl p-5">
+          <p class="mb-5">08 MAY 2018 &#8226 NEWS</p>
+          <h3 class="mb-5">Strutt & Parker Appoints Rupert Wiggin new Head of Sales at Kensington</h3>
+          <p>After 25 years working in London, Rupert is returning to his roots in the country to test his skills in a different market.</p>
+        </div>
+
+        <div class="row-start-4 row-end-4 col-start-1 col-end-3 sm:row-start-1 sm:row-end-4 sm:col-start-4 sm:col-end-3 
+     xl:hidden
+        flex mb-8">
+          <h3>Read all <span>></span></h3>
+        </div>
+
+        <div
+        class="
+          row-start-5 row-end-5
+          sm:row-start-5 sm:row-end-5
+          xl:row-span-4
+          col-start-1 col-end-7
+          sm:col-start-1 sm:col-end-7
+          xl:col-start-10 xl:col-end-13
+          w-full
+          h-72
+          xl:h-80
+          rounded-lg
+          shadow-xl
+          bg-bnp bg-cover
+          
+          flex
+          items-center
+          xl:items-end
+          justify-center
+          relative
+        "
+      >
+        <!--<img src="./img/house.png" class="absolute bg-cover"  title="house image">-->
+        <div
+          class="
+        absolute
+            flex flex-col
+            items-center
+            w-64
+            max-h-40
+            top-40
+            xl:mb-6
+            bg-white
+            rounded-lg
+          "
+        >
+          <p class="pt-2.5">Commercial Property Search</p>
+          <p class="pt-2.5">Offices, Industrial, Retail & Leisure and Alternatives</p>
+         
+              <label for="">Visit website <span>></span></label>
+              
+           
+        </div>
+      </div>
 
       </div>
+
+    </section>
+
+    <section class="bg-btn-report">
+      <div class="container mx-auto px-4">
+
+      
+      <div
+          class="
+            grid mincontent5row grid-cols-6
+            sm:mincontent3row sm:grid-cols-12
+            xl:mincontent2row xl:grid-cols-12
+            gap-y-8
+            sm:gap-x-2 sm:gap-y-2
+            xl:gap-y-2
+            justify-between
+            items-center
+            mt-14
+          py-8
+          "
+        >
+        <div class="
+        row-start-1 row-end-1
+        sm:row-start-1 sm:row-end-1
+        xl:row-start-1 xl:row-end-1
+        col-start-1 col-end-7
+        sm:col-start-1 sm:col-end-7
+        xl:col-start-1 xl:col-end-7
+        p-8 mb-8">
+          <h3>Publications</h3>
+          <p>Our latest research and thoughts on the property market.</p>
+        </div>
+
+        <!--367px h da rivedere-->
+          <div
+            class="
+              row-start-2 row-end-2
+              sm:row-start-2 sm:row-end-2
+              xl:row-start-2 xl:row-end-2
+              col-start-1 col-end-7
+              sm:col-start-1 sm:col-end-7
+              xl:col-start-1 xl:col-end-4
+              w-full
+              h-80
+              xl:h-80
+              rounded-lg
+              shadow-xl
+              bg-sky bg-cover
+              flex
+              items-center
+              xl:items-end
+              justify-center
+            "
+          >
+            <!--<img src="./img/house.png" class="absolute bg-cover"  title="house image">-->
+            <div
+              class="
+                
+                flex flex-col
+                items-center
+                w-full
+                max-h-60
+                mt-16
+                xl:mb-6
+                bg-white
+               
+              "
+            >
+              <h5 class="pt-2.5 uppercase">commercial</h5>
+              <h3 class="pt-2.5">Central London Office Development</h3>
+              <h5 class="pt-2.5">3rd August 2018</h5>
+            </div>
+          </div>
+
+          <div
+            class="
+              row-start-3 row-end-3
+              sm:row-start-2 sm:row-end-2
+              xl:row-start-2 xl:row-end-2
+              col-start-1 col-end-7
+              sm:col-start-7 sm:col-end-13
+              xl:col-start-4 xl:col-end-7
+              relative
+              w-full
+              h-80
+              xl:h-80
+              rounded-lg
+              shadow-xl
+              bg-door bg-cover
+              flex
+              items-center
+              xl:items-end
+              justify-center
+            "
+          >
+            <div
+              class="
+                absolute
+                flex flex-col
+                items-center
+                w-full
+                max-h-60
+                mt-16
+                xl:mb-6
+                bg-white
+               
+              "
+            >
+            <h5 class="pt-2.5 uppercase">residential quarterly</h5>
+            <h3 class="pt-2.5">Residential Quarterly
+              Summer 2018</h3>
+            <h5 class="pt-2.5">2nd August 2018</h5>
+            </div>
+          </div>
+          <div
+            class="
+              row-start-4 row-end-4
+              sm:row-start-3 sm:row-end-3
+              xl:row-start-2 xl:row-end-2
+              col-start-1 col-end-7
+              sm:col-start-1 sm:col-end-7
+              xl:col-start-7 xl:col-end-10
+              bg-street 
+              bg-cover
+              relative
+              w-full
+              h-80
+              xl:h-80
+              rounded-lg
+              shadow-xl
+              flex
+              items-center
+              xl:items-end
+              justify-center
+            "
+          >
+            <div
+              class="
+                absolute
+                flex flex-col
+                items-center
+                w-full
+                max-h-60
+                mt-16
+                xl:mb-6
+                bg-white
+             
+              "
+            >
+            <h5 class="pt-2.5 uppercase">residential quarterly</h5>
+            <h3 class="pt-2.5">Residential Quarterly
+              Spring 2018</h3>
+            <h5 class="pt-2.5">2nd May 2018</h5>
+            </div>
+          </div>
+          <div
+            class="
+              row-start-5 row-end-5
+              sm:row-start-3 sm:row-end-3
+              xl:row-start-2 xl:row-end-2
+              col-start-1 col-end-6
+              sm:col-start-7 sm:col-end-13
+              xl:col-start-10 xl:col-end-13
+              row-start-4 row-end-4
+              col-start-1 col-end-7
+              bg-mountains bg-cover
+              relative
+              w-full
+              h-80
+              xl:h-80
+              rounded-lg
+              shadow-xl
+              flex
+              items-center
+              xl:items-end
+              justify-center
+            "
+          >
+            <div
+              class="
+                absolute
+                flex flex-col
+                items-center
+                w-full
+                max-h-60
+                mt-16
+                xl:mb-6
+                bg-white
+          
+              "
+            >
+            <h5 class="pt-2.5 uppercase">rural</h5>
+            <h3 class="pt-2.5">Land Business
+              Spring/Summer 2018</h3>
+            <h5 class="pt-2.5">2nd May 2018</h5>
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-start xl:justify-end p-8 mb-8">
+          <h3>Read all <span>></span></h3>
+        </div>
+      </div>
+    </section>
+
+    <section class="">
+      <div class="container mx-auto px-4">
+
+      
+      <div
+          class="
+            grid mincontent5row grid-cols-6
+            sm:mincontent3row sm:grid-cols-12
+            xl:mincontent2row xl:grid-cols-12
+            gap-y-8
+            sm:gap-x-2 sm:gap-y-2
+            xl:gap-x-14
+            justify-between
+            items-center
+            mt-14
+          py-8
+          "
+        >
+        <div class="
+        row-start-1 row-end-1
+        sm:row-start-1 sm:row-end-1
+        xl:row-start-1 xl:row-end-1
+        col-start-1 col-end-6
+        sm:col-start-1 sm:col-end-7
+        xl:col-start-1 xl:col-end-9
+        p-8 mb-8">
+          <h3>You can rely on Strutt & Parker</h3>
+          <p>Leading the field in residential, commercial and rural property services.</p>
+        </div>
+
+    
+          <div
+            class="
+              row-start-2 row-end-2
+              sm:row-start-2 sm:row-end-2
+              xl:row-start-2 xl:row-end-2
+              col-start-1 col-end-7
+              sm:col-start-1 sm:col-end-7
+              xl:col-start-1 xl:col-end-4
+              w-full
+         
+  
+              rounded-lg
+ 
+         
+              flex
+              items-center
+    
+              justify-center
+            "
+          >
+         
+            <div
+              class="
+                
+                flex flex-col
+                items-start
+                xl:items-center
+                justify-start
+                xl:justify-center
+                w-full
+                h-full
+                my-8
+                xl:my-20
+                bg-white
+               
+              "
+            >
+              <h5 class="pt-2.5 uppercase border-b-2">60</h5>
+              <p class="pt-2.5">offices across the UK, employing 900+ members of staff</p>
+         
+            </div>
+          </div>
+
+          <div
+            class="
+              row-start-3 row-end-3
+              sm:row-start-2 sm:row-end-2
+              xl:row-start-2 xl:row-end-2
+              col-start-1 col-end-7
+              sm:col-start-7 sm:col-end-13
+              xl:col-start-4 xl:col-end-7
+              relative
+              w-full
+         
+      
+              rounded-lg
+      
+           
+              flex
+              items-center
+              xl:items-end
+              justify-center
+            "
+          >
+          <div
+          class="
+            
+            flex flex-col
+            items-start
+            xl:items-center
+            justify-start
+            xl:justify-center
+            w-full
+            h-full
+            my-8
+            xl:my-20
+            bg-white
+           
+          "
+        >
+          <h5 class="pt-2.5 uppercase border-b-2">97%</h5>
+          <p class="pt-2.5">of our sellers would recommend us to a friend</p>
+     
+        </div>
+          </div>
+          <div
+            class="
+              row-start-4 row-end-4
+              sm:row-start-3 sm:row-end-3
+              xl:row-start-2 xl:row-end-2
+              col-start-1 col-end-7
+              sm:col-start-1 sm:col-end-7
+              xl:col-start-7 xl:col-end-10
+         
+          
+              w-full
+     
+              
+              rounded-lg
+   
+              flex
+              items-center
+              xl:items-end
+              justify-center
+            "
+          >
+          <div
+          class="
+            
+            flex flex-col
+            items-start
+            xl:items-center
+            justify-start
+            xl:justify-center
+            w-full
+            h-full
+            my-8
+            xl:my-20
+            bg-white
+           
+          "
+        >
+          <h5 class="pt-2.5 uppercase border-b-2">£25bn</h5>
+          <p class="pt-2.5">of commercial investments handled in the last 10 years</p>
+     
+        </div>
+          </div>
+          <div
+            class="
+              row-start-5 row-end-5
+              sm:row-start-3 sm:row-end-3
+              xl:row-start-2 xl:row-end-2
+              col-start-1 col-end-6
+              sm:col-start-7 sm:col-end-13
+              xl:col-start-10 xl:col-end-13
+              row-start-4 row-end-4
+              col-start-1 col-end-7
+        
+              w-full
+          
+          
+              rounded-lg
+   
+              flex
+              items-center
+              xl:items-end
+              justify-center
+            "
+          >
+          <div
+          class="
+            
+            flex flex-col
+            items-start
+                xl:items-center
+                justify-start
+                xl:justify-center
+            w-full
+            h-full
+            my-8
+            xl:my-20
+            bg-white
+           
+          "
+        >
+          <h5 class="pt-2.5 uppercase border-b-2">2m</h5>
+          <p class="pt-2.5">acres of land across the UK managed by Strutt & Parker</p>
+     
+        </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="container mx-auto px-4">
+      <div class="bg-mapbkg">
+      
+       
+        <div
+        class="
+          grid grid-rows-1 grid-cols-6
+          sm:grid-rows-1 sm:grid-cols-12
+          xl:grid-rows-1 xl:grid-cols-12
+         
+          sm:gap-x-2 sm:gap-y-2
+          xl:gap-x-14
+          justify-between
+          items-center
+          py-14
+     
+        "
+      >
+        
+        <div class="row-start-1 row-end-1 col-start-1 col-end-7 
+        flex flex-col py-5 px-4">
+          <div>
+            <h3>Branch locator</h3>
+            <p>Donec facilisis tortor ut augue lacinia, at viverra est semper.</p>
+          </div>
+          <div>
+            <div class="flex flex-col sm:flex-row justify-between items-center mt-14 ">
+              <input
+                type="text"
+                class="h-12 w-64 border rounded-t-lg sm:border sm:rounded-l-lg pl-2"
+                placeholder="your location"
+              />
+              <div class="h-12 w-64 border rounded-b-lg sm:rounded-r-lg bg-red-500 flex items-center justify-center"><span>search ></span></div>
+            </div>
+          </div>
+        
+        </div>
+        <div class="hidden sm:block sm:row-start-1 sm:row-end-1 sm:col-start-7 sm:col-end-13 bg-britain w-full h-full">
+
+        </div>
+        </div>
+        
+      </div>
+    </section>
+
+    <section class="container mx-auto px-4">
+      <div class="bg-bkgdefault">
+        <div
+        class="
+          grid grid-rows-2 grid-cols-6
+          sm:grid-rows-1 sm:grid-cols-12
+          xl:grid-rows-1 xl:grid-cols-12
+          gap-y-8
+          sm:gap-x-2 sm:gap-y-2
+          xl:gap-x-14
+          justify-between
+          items-center
+          mt-14
+    
+        "
+      >
+        
+        <div class="row-start-1 row-end-1 sm:row-start-1 sm:row-end-1 col-start-1 col-end-7 
+        flex flex-col sm:flex-row py-5 px-4">
+        <div>
+          <img src="./img/corona.png" alt="">
+        </div>
+          <div>
+            <h3>Affiliate of the Year </h3>
+            <p>Christie’s International Real Estate 2015</p>
+          </div>
+        </div>
+        <div class="row-start-2 row-end-2 sm:row-start-1 sm:row-end-1 col-start-1 col-end-7 sm:col-start-7 sm:col-end-13
+        flex flex-col sm:flex-row py-5 px-4">
+        <div>
+          <img src="./img/corona.png" alt="">
+        </div>
+          <div>
+            <h3>UK Sales Agency of the Year</h3>
+            <p>RESI Awards 2017</p>
+          </div>
+        </div>
+        </div>
+        </div>
+     
+      
+
+     
+    </section>
+
+    
+    
+
+    <footer class="bg-footer">
+      <div class="container mx-auto px-4">
+        <div
+          class="
+            flex flex-col
+            lg:flex-row lg:justify-between
+            pt-10
+            mb-10
+            lg:items-center lg:mr-36
+            xl:mr-64
+          "
+        >
+          <div class="my-10 lg:my-0">
+            <ul>
+              <li class="mb-5">Quick actions</li>
+              <li>Buy</li>
+              <li>Rent</li>
+              <li>Sell</li>
+              <li>Let</li>
+              <li>Commercial</li>
+            </ul>
+          </div>
+          <div class="flex flex-col lg:flex-row mb-10 lg:mb-0">
+            <ul>
+              <li class="mb-5">Strutt & Parker</li>
+              <li>Property Search</li>
+              <li>Services</li>
+              <li>People</li>
+              <li>Offices</li>
+              <li>Knowledge & Research</li>
+            </ul>
+          </div>
+          <div class="flex flex-col lg:flex-row mb-10 lg:mb-0">
+            <ul class="lg:self-center lg:pt-4">
+              <li>Pubblications</li>
+              <li>Careers</li>
+              <li>Know your customer</li>
+              <li>Contact</li>
+            </ul>
+          </div>
+          <div class="mb-10 lg:mb-0">
+            <ul>
+              <li class="mb-5">Other</li>
+              <li>Contact</li>
+              <li>Privacy Policy</li>
+              <li>Accessibility policy</li>
+              <li>Sitemap</li>
+              <li>Cookie policy</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="flex flex-col border-b-2 lg:flex-row lg:items-center">
+          <div class="relative w-32 h-6 lg:mr-7">
+            <img
+              class="absolute bg-cover"
+              src="./img/CIRE_New_logo_No_Line_No_box-Black.png"
+              alt="logo"
+            />
+          </div>
+          <div class="relative w-32 h-6 mb-10">
+            <img class="absolute" src="./img/otm.png" alt="" />
+          </div>
+        </div>
+
+        <div class="flex flex-col">
+          <div class="my-10">
+            <ul
+              class="
+                flex flex-col
+                lg:flex-row lg:justify-between lg:items-center
+              "
+            >
+              <li class="mb-12 lg:mb-0">© Strutt & Parker 2018</li>
+              <li><div class="w-28 h-7 bg-white"></div></li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </footer>
-  </div>
   </body>
 </html>
