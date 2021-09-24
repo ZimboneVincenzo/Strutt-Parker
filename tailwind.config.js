@@ -20,11 +20,38 @@ module.exports = {
         xxl: '1400px',
       },
     },
+    borderColor: theme => ({
+      ...theme('colors'),
+      'borderInput':'#CCD1D9',
+      'borderToggle':'#C2052F',
+      
+     }),
+    
     extend: {
-      fontSize: {
-        'nav':'15px'
+      width: {
+        'input2/3':'60%',
+        'input1/3':'20%',
+        'toggleDesk':'3.75rem',
+        
       },
+
+      borderRadius: {
+        'toggle':'30px'
+      },
+      fontSize: {
+        'nav':'15px',
+        'h1SizeMobile':'32px',
+        'h1SizeDesk':'44px'
+      },
+      lineHeight: {
+        'h1LineMobile': '38px',
+        'h1LineDesk': '40px',
+       
+       },
       colors: {
+        'baseText':'#FFFFFF',
+        'place':'#656D78',
+        'toggle':'#C2052F',
         'text1':'#3E4245',
         'bkgdefault':'#E5E5E5',
         'regal-blue': '#cc8899',
@@ -47,7 +74,9 @@ module.exports = {
         'door':"url('./img/door.png')",
         'sky':"url('./img/sky.png')",
         'britain':"url('./img/Britain.png')",
-        'crown':"url('./img/corona.png')"
+        'crown':"url('./img/corona.png')",
+        'rettangle': "url('./img/Rectangle 7.png')",
+      
       },
       gridTemplateRows: {
         

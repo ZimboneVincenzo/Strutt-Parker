@@ -43,34 +43,80 @@
     <section class="container mx-auto px-4">
       <!--div class="grid grid-rows-6 grid-cols-6 "-->
       <div class="flex flex-col justify-between">
-        <div class="flex flex-col justify-between items-center mt-14">
-          <h2>Your perfect search starts here</h2>
-          <p>
+        <div class="flex flex-col justify-between items-center mt-14 p-2">
+          <h1 class="text-center text-text1 sm:mb-2 text-h1SizeMobile h1LineMobile sm:h1SizeDesk sm:h1LineDesk">Your perfect search starts here</h1>
+          <p class="text-center text-base text-text1">
             Find your perfect house, residential property, commercial building,
             farm, estate or piece of land.
           </p>
         </div>
 
-        <div class="flex flex-col justify-between items-center mt-14">
+        <div class="flex flex-col justify-between items-center mt-14 lg:hidden">
           <input
-            type="text"
-            class="h-12 w-64 border border-gray-300 rounded-t-lg"
+        
+            class="h-12 w-64 pl-5 border border-borderInput rounded-t-lg placeholder-place placeholder-opacity-60"
+            placeholder="Search by location"
           />
-          <div
-            class="
-              grid grid-cols-2
-              divide-x-2
-              border-gray-300
-              h-12
-              w-64
-              border
-              rounded-none
-            "
-          >
-            <div>1</div>
-            <div>2</div>
+          <div class="flex items-center border-borderInput h-12 w-64 border rounded-none">
+          <div class="flex flex-row items-center justify-around w-full  max-h-7">
+            <div class=" flex flex-row items-center justify-between  border-r-2 border-borderInput pr-5">
+              <p class="pr-2 text-place">Exact area</p>
+              <span class="bg-rettangle w-2 h-1"></span>
+            </div>
+            <div class=" flex flex-row items-center justify-between">
+              <div class="pr-2.5 text-place font-semibold">Buy</div>
+              
+                <div class="relative w-10 h-5 border border-borderInput rounded-toggle" >
+                  <div class="absolute w-5 h-3.5 bg-toggle rounded-toggle top-0.5 left-1"></div>
+                </div>
+
+             
+              <div class="pl-1.5 text-place">Rent</div>
+              </div>
           </div>
-          <div class="h-12 w-64 border rounded-b-lg bg-red-500"></div>
+            
+          </div>
+          <div class="flex justify-center items-center h-12 w-64 border border-toggle  rounded-b-lg bg-toggle">
+            <p class="pr-2 text-baseText capitalize">search</p>
+              <span class="text-baseText">></span>
+          </div>
+        </div>
+        
+        <div class="flex flex-row mt-14 w-full h-12 hidden justify-center items-center lg:flex">
+
+            <div class="flex flex-row items-center w-3/4 h-12 border border-r-0 rounded-lg border-borderInput ">
+
+              <div class="flex items-center border-r border-borderInput h-full w-input2/3">
+                <div class="flex w-full items-center max-h-7">
+
+                <input class="lg:w-2/4 xl:w-3/4 pl-5 border-r-2 border-borderInput placeholder-place placeholder-opacity-60" placeholder="Search by location e.g London, SW4, or England"/>
+                <div class="lg:w-2/4 xl:w-1/4 flex flex-row justify-center items-center">
+                  <p class="pr-2 text-place">Exact area</p>
+                  <span class="bg-rettangle w-2 h-1"></span>
+                </div>
+              </div>
+
+              </div>
+
+              <div class="flex flex-row items-center justify-center max-h-7 w-input1/3">
+                <div class=" flex flex-row items-center">
+                  <div class="pr-2.5 text-place font-semibold">Buy</div>
+                  
+                    <div class="relative w-10 xl:w-toggleDesk h-5 border border-borderInput rounded-toggle" >
+                      <div class="absolute w-5 xl:w-7 h-3.5 bg-toggle rounded-toggle top-0.5 left-1"></div>
+                    </div>
+
+                  <div class="pl-1.5 text-place">Rent</div>
+                </div>
+              </div>
+
+              <div class="flex justify-center items-center h-12 w-input1/3 border border-toggle  rounded-r-lg bg-toggle">
+                <p class="pr-2 text-baseText capitalize">search</p>
+                  <span class="text-baseText">></span>
+              </div>
+            </div>
+                
+
         </div>
 
         <div
