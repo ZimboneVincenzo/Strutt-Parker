@@ -21,7 +21,11 @@ module.exports = {
       },
     },
     extend: {
+      fontSize: {
+        'nav':'15px'
+      },
       colors: {
+        'text1':'#3E4245',
         'bkgdefault':'#E5E5E5',
         'regal-blue': '#cc8899',
         'icon-nav': '#C20430',
@@ -55,6 +59,7 @@ module.exports = {
        'mincontent5row': 'repeat(5, minmax(0, mincontent))',
       }
     },
+ 
   },
   variants: {
     extend: {},
