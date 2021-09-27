@@ -41,10 +41,12 @@ module.exports = {
         'input1/3':'20%',
         'toggleDesk':'3.75rem',
         'cardG1W':'17.5rem',
+        'elementcardG1xl':'13.75rem',
         'elementcardG1':'16.625rem'
       },
       height:{
       'arrow':'0.4375rem',
+      '4.5':'4.5rem',
       'cardG1':'21.625rem',
       'cardGroup1':'12.5rem',
       },
