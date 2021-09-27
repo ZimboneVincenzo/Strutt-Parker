@@ -36,6 +36,10 @@ module.exports = {
         'm45':'-45deg',
         '45':'45deg'
       },
+      padding: {
+        'reportText':'2.875rem'
+      },
+
       width: {
         'input2/3':'60%',
         'input1/3':'20%',
@@ -56,7 +60,10 @@ module.exports = {
       fontSize: {
         'nav':'15px',
         'h1SizeMobile':'32px',
-        'h1SizeDesk':'44px'
+        'h1SizeDesk':'44px',
+        'reports':'1.375rem',
+        'reportsSmall':'1rem',
+        'btnReport':'0.87',
       },
       lineHeight: {
         'h1LineMobile': '38px',

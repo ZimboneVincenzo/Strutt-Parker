@@ -385,21 +385,29 @@
 
         <hr class="mt-10 text-mapbkg">
 
-        <div class="flex flex-col xl:flex-row items-center">
-          <div class="flex flex-col xl:flex-row w-72 sm:w-full p-6 shadow-2xl mt-10">
-            <div class="flex flex-col xl:flex-row">
-              <h2 class="mb-6 text-xl leading-7 text-left">
+        <div class="flex flex-col xl:flex-row items-center ">
+          <div class="flex flex-col xl:flex-row xl:items-center xl:pt-8 w-72 sm:w-full p-6 shadow-2xl mt-10">
+            <div class="flex flex-col xl:flex-row xl:w-1/5">
+              <h2 class="mb-6 text-reports leading-8 text-left xl:pt-2">
                 Report an issue on your property
               </h2>
-              <p class="mb-2.5 text-base leading-7 text-left">
+            </div>
+            <div class="flex flex-col xl:flex-row xl:items-center xl:border-r xl:border-borderInput xl:w-3/5">
+              <p class="mb-2.5 text-reportsSmall leading-8 text-left xl:pl-reportText xl:pr-reportText">
                 It was a humorously perilous business for both of us. For, before
                 we proceed further, it must be said that the monkey-rope was fast
                 at both ends.
               </p>
             </div>
-            <div class="flex justify-center w-44 h-12 rounded-lg bg-card-element">
-              <label for="" class="self-center">report now</label>
-              <span></span>
+            <div class="flex xl:justify-end xl:items-center xl:w-1/5">
+              <div class=" flex justify-evenly items-center w-44 h-12 rounded-lg bg-card-element">
+                <label for="" class="self-center leading-3 text-btnReport text-baseText">Report now</label>
+                <div class="relative w-1.5 h-2.5 flex items-center justify-center">
+                  <hr class="absolute w-1.5 h-arrow  flex-shrink text-baseText transform rotate-45">                  
+                  <hr class="absolute w-1.5 h-arrow flex-shrink text-baseText transform rotate-135">               
+              </div>
+              </div>
+             
             </div>
           </div>
         </div>
