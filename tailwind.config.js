@@ -26,15 +26,28 @@ module.exports = {
       'borderToggle':'#C2052F',
       
      }),
-    
+     fontSize: {
+       'sales':"14px"
+     },
+   
     extend: {
+      rotate: {
+        '135':'135deg',
+        'm45':'-45deg',
+        '45':'45deg'
+      },
       width: {
         'input2/3':'60%',
         'input1/3':'20%',
         'toggleDesk':'3.75rem',
-        
+        'cardG1W':'17.5rem',
+        'elementcardG1':'16.625rem'
       },
-
+      height:{
+      'arrow':'0.4375rem',
+      'cardG1':'21.625rem',
+      'cardGroup1':'12.5rem',
+      },
       borderRadius: {
         'toggle':'30px'
       },
@@ -58,7 +71,7 @@ module.exports = {
         'icon-nav': '#C20430',
         'menu-nav':'#3E4245',
         'footer':'#3E4245',
-        'btn-report':'#B9AC9B',
+        'card-element':'#B9AC9B',
         'knowledge':'#F7F7F7',
         'knowdiv': '#B9AC9B',
         'mapbkg':'#CCD1D9',
