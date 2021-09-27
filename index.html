@@ -399,7 +399,7 @@
                 at both ends.
               </p>
             </div>
-            <div class="flex xl:justify-end xl:items-center xl:w-1/5">
+            <div class="flex xl:justify-end xxl:justify-around xl:items-center xl:w-1/5">
               <div class=" flex justify-evenly items-center w-44 h-12 rounded-lg bg-card-element">
                 <label for="" class="self-center leading-3 text-btnReport text-baseText">Report now</label>
                 <div class="relative w-1.5 h-2.5 flex items-center justify-center">
@@ -416,15 +416,19 @@
 
     <section class="container mx-auto px-4">
 
-      <h3 class=" my-6 sm:hidden">Highlighted</h3>
+      <h3 class=" my-6 pt-12 text-h1LineDesk text-1.75 font-medium sm:hidden">Highlighted</h3>
+      <h3 class=" my-6 pt-12 text-h1LineDesk text-1.75 font-medium hidden sm:block">Featured Properties</h3>
 
-      <div class=" grid grid-rows-3 grid-cols-6
+      <div class=" 
+      grid 
+      grid-rows-3 
+      grid-cols-6
       sm:grid-rows-1 sm:grid-cols-12
       xl:grid-rows-1 xl:grid-cols-12
       gap-y-8
       sm:gap-x-2 sm:gap-y-2
-      xl:gap-y-2
-      justify-between items-center my-10">
+      xl:gap-x-14
+      my-10">
        
 
         <!--card 1-->
@@ -435,25 +439,25 @@
         sm:col-start-1 sm:col-end-5
         xl:col-start-1 xl:col-end-5
         w-full  shadow-2xl rounded-lg">
-          <div class="w-full h-full">
+          <div class="w-full h-9.11">
             <img
               class="object-cover w-full h-full rounded-t-lg"
               src="./img/interior-house.png"
               alt="interior house"
             />
           </div>
-          <div class="p-3">
+          <div class="pt-4 px-3">
             <div class="flex flex-col">
-              <h3 class="mb-3.5">Chester Square, Belgravia, London</h3>
-              <p class="pb-2.5 border-b-2">
+              <h3 class="mb-3.5 text-20 leading-6 text-knowdiv sm:">Chester Square, Belgravia, <br class="hidden xl:block"> London</h3>
+              <p class="pb-5 border-b border-cardReport text-nav leading-1.375 text-text1">
                 One of the most impressive newly refurbished houses in Belgravia
                 with a lift and a double garage.
               </p>
             </div>
 
-            <div class="flex flex-row justify-between mt-5">
-              <p>Price On Application</p>
-              <span>POA</span>
+            <div class="flex flex-row justify-between mt-5 mb-3.5">
+              <p class="leading-6 text-14 text-menu-nav">Price On Application</p>
+              <span class="leading-6 text-14 text-menu-nav font-medium">POA</span>
             </div>
           </div>
         </div>
@@ -467,25 +471,25 @@
         sm:col-start-5 sm:col-end-9
         xl:col-start-5 xl:col-end-9
         shadow-2xl rounded-lg">
-          <div class="w-full h-full">
+          <div class="w-full h-9.11">
             <img
               class="object-cover w-full h-full rounded-t-lg"
               src="./img/interior-classic.png"
               alt="interior house"
             />
           </div>
-          <div class="p-3">
+          <div class="pt-4 px-3">
             <div class="flex flex-col">
-              <h3 class="mb-3.5">Lygon Place London</h3>
-              <p class="pb-2.5 border-b-2">
+              <h3 class="mb-3.5 text-20 leading-6 text-knowdiv">Lygon Place <br> London</h3>
+              <p class="pb-5 border-b border-cardReport text-nav leading-1.375 text-text1">
                 A grand seven bedroom period townhouse with a lift, underground
                 parking and porterage in Belgravia
               </p>
             </div>
 
-            <div class="flex flex-row justify-between mt-5">
-              <p>Guide price</p>
-              <span>£ 21,500,000</span>
+            <div class="flex flex-row justify-between mt-5 mb-3.5">
+              <p  class="leading-6 text-14 text-menu-nav">Guide price</p>
+              <span class="leading-6 text-14 text-menu-nav font-medium">£ 21,500,000</span>
             </div>
           </div>
         </div>
@@ -499,19 +503,19 @@
         sm:col-start-9 sm:col-end-13
         xl:col-start-9 xl:col-end-13
         w-full shadow-2xl rounded-lg">
-          <div class="w-full h-full">
+          <div class="w-full h-9.11">
             <img
               class="object-cover w-full h-full rounded-t-lg"
               src="./img/external-office.png"
               alt="interior house"
             />
           </div>
-          <div class="p-3">
-            <div class="relative flex flex-col border-b-2">
-              <h3 class="mb-3.5">
+          <div class="pt-4 px-3">
+            <div class="relative flex flex-col border-b border-cardReport">
+              <h3 class="mb-3.5 text-20 leading-6 text-knowdiv">
                 Kensington Palace Gardens, Kensington, London
               </h3>
-              <p class="pb-2.5">
+              <p class="pb-5 text-nav leading-1.375 text-text1">
                 A very special five bedroom apartment with parking, terrace,
                 communal garden and porteragee.
               </p>
@@ -526,18 +530,16 @@
                   w-24
                   h-5
                   rounded-full
-                  py-3
-                  px-6
                   bg-icon-nav
                 "
               >
-                <p class="absolute text-xs uppercase">under offer</p>
+                <p class="absolute text-11 uppercase text-baseText">under offer</p>
               </div>
             </div>
 
-            <div class="flex flex-row justify-between mt-5">
-              <p>Asking Price</p>
-              <span>£ 19,750,000</span>
+            <div class="flex flex-row justify-between mt-5 mb-3.5">
+              <p class="leading-6 text-14 text-menu-nav">Asking Price</p>
+              <span class="leading-6 text-14 text-menu-nav font-medium">£ 19,750,000</span>
             </div>
           </div>
         </div>

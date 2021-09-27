@@ -29,7 +29,6 @@ module.exports = {
      fontSize: {
        'sales':"14px"
      },
-   
     extend: {
       rotate: {
         '135':'135deg',
@@ -37,7 +36,7 @@ module.exports = {
         '45':'45deg'
       },
       padding: {
-        'reportText':'2.875rem'
+        'reportText':'2.875rem',
       },
 
       width: {
@@ -46,9 +45,11 @@ module.exports = {
         'toggleDesk':'3.75rem',
         'cardG1W':'17.5rem',
         'elementcardG1xl':'13.75rem',
-        'elementcardG1':'16.625rem'
+        'elementcardG1':'16.625rem',
+        
       },
       height:{
+      '9.11':'9.1118rem',
       'arrow':'0.4375rem',
       '4.5':'4.5rem',
       'cardG1':'21.625rem',
@@ -57,6 +58,9 @@ module.exports = {
       borderRadius: {
         'toggle':'30px'
       },
+
+    
+
       fontSize: {
         'nav':'15px',
         'h1SizeMobile':'32px',
@@ -64,10 +68,17 @@ module.exports = {
         'reports':'1.375rem',
         'reportsSmall':'1rem',
         'btnReport':'0.87',
+        '1.75':'1.75rem',
+        '20':'1.25rem',
+        '24':'1.5rem',
+        '14':'0.875rem',
+        '11':'0.6875rem'
       },
       lineHeight: {
         'h1LineMobile': '38px',
         'h1LineDesk': '40px',
+        '1.375':'1.375rem'
+        
        
        },
       colors: {
@@ -84,7 +95,9 @@ module.exports = {
         'knowledge':'#F7F7F7',
         'knowdiv': '#B9AC9B',
         'mapbkg':'#CCD1D9',
+        'cardReport':'#E6E9ED'
       },
+
       backgroundImage: {
         'house-img': "url('./img/house.png')",
         'countryside-img': "url('./img/countryside.png')",
@@ -105,10 +118,17 @@ module.exports = {
         //3 row grid
         'mincontent2row': 'repeat(2, minmax(0, mincontent))',
         //3 row grid
-        'mincontent3row': 'repeat(3, minmax(0, mincontent))',
+        'mincontent3row': 'repeat(3, minmax(377px, max-content))',
         //5 row grid
        'mincontent5row': 'repeat(5, minmax(0, mincontent))',
-      }
+       //column
+       
+      },
+
+      gridTemplateColumns: {
+        'column40px':'repeat(6, max(40px, max-content))'
+      },
+
     },
  
   },
