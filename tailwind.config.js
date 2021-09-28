@@ -37,6 +37,7 @@ module.exports = {
       },
       padding: {
         'reportText':'2.875rem',
+        
       },
 
       width: {
@@ -48,7 +49,8 @@ module.exports = {
         'cardG1W':'17.5rem',
         'elementcardG1xl':'13.75rem',
         'elementcardG1':'16.625rem',
-        '200':'12.5rem'
+        '200':'12.5rem',
+        '266':'16.625rem'
         
       },
       height:{
@@ -78,7 +80,11 @@ module.exports = {
         'btnReport':'0.87',
         '1.75':'1.75rem',
         '12':'0.75rem',
+        '15':'0.9375rem',
+        '14':'0.875rem',
+        '19':'1.1875rem',
         '20':'1.25rem',
+        '21':'1.3125rem',
         '24':'1.5rem',
         '14':'0.875rem',
         '11':'0.6875rem',
@@ -89,14 +95,19 @@ module.exports = {
         'h1LineMobile': '38px',
         'h1LineDesk': '40px',
         '1.375':'1.375rem',
+        '12':'0.75rem',
+        '14':'0.875rem',
         '20':'1.25rem',
         '24':'1.5rem',
+        '26':'1.625rem',
         '28':'1.75rem',
         '30':'1.875rem'
+        
         
        
        },
       colors: {
+        'base':'#000000',
         'baseText':'#FFFFFF',
         'place':'#656D78',
         'toggle':'#C2052F',
@@ -110,7 +121,8 @@ module.exports = {
         'knowledge':'#F7F7F7',
         'knowdiv': '#B9AC9B',
         'mapbkg':'#CCD1D9',
-        'cardReport':'#E6E9ED'
+        'cardReport':'#E6E9ED',
+        'green':'#008955',
       },
 
       backgroundImage: {
