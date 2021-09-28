@@ -40,6 +40,8 @@ module.exports = {
       },
 
       width: {
+        '01875':'0.1875rem',
+        '1125':'11.25rem',
         'input2/3':'60%',
         'input1/3':'20%',
         'toggleDesk':'3.75rem',
@@ -49,9 +51,11 @@ module.exports = {
         
       },
       height:{
+        '4.5':'4.5rem',
       '9.11':'9.1118rem',
       'arrow':'0.4375rem',
       '4.5':'4.5rem',
+      '1375':'1.375rem',
       'cardG1':'21.625rem',
       'cardGroup1':'12.5rem',
       },
