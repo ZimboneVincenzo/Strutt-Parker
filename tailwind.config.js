@@ -48,16 +48,18 @@ module.exports = {
         'cardG1W':'17.5rem',
         'elementcardG1xl':'13.75rem',
         'elementcardG1':'16.625rem',
+        '200':'12.5rem'
         
       },
       height:{
-        '4.5':'4.5rem',
+      '4.5':'4.5rem',
       '9.11':'9.1118rem',
       'arrow':'0.4375rem',
       '4.5':'4.5rem',
       '1375':'1.375rem',
       'cardG1':'21.625rem',
       'cardGroup1':'12.5rem',
+      '190':'11.875rem'
       },
       borderRadius: {
         'toggle':'30px'
@@ -66,22 +68,31 @@ module.exports = {
     
 
       fontSize: {
+        '1':'1rem',
         'nav':'15px',
         'h1SizeMobile':'32px',
         'h1SizeDesk':'44px',
         'reports':'1.375rem',
         'reportsSmall':'1rem',
+        '13':'0.8125rem',
         'btnReport':'0.87',
         '1.75':'1.75rem',
+        '12':'0.75rem',
         '20':'1.25rem',
         '24':'1.5rem',
         '14':'0.875rem',
-        '11':'0.6875rem'
+        '11':'0.6875rem',
+        '18':'1.125rem',
+        '34':'2.125rem'
       },
       lineHeight: {
         'h1LineMobile': '38px',
         'h1LineDesk': '40px',
-        '1.375':'1.375rem'
+        '1.375':'1.375rem',
+        '20':'1.25rem',
+        '24':'1.5rem',
+        '28':'1.75rem',
+        '30':'1.875rem'
         
        
        },

@@ -439,7 +439,7 @@
         sm:col-start-1 sm:col-end-5
         xl:col-start-1 xl:col-end-5
         w-full  shadow-2xl rounded-lg">
-          <div class="w-full h-9.11">
+          <div class="w-full h-9.11 xl:h-60">
             <img
               class="object-cover w-full h-full rounded-t-lg"
               src="./img/interior-house.png"
@@ -486,7 +486,7 @@
         sm:col-start-5 sm:col-end-9
         xl:col-start-5 xl:col-end-9
         shadow-2xl rounded-lg">
-          <div class="w-full h-9.11">
+          <div class="w-full h-9.11 xl:h-60">
             <img
               class="object-cover w-full h-full rounded-t-lg"
               src="./img/interior-classic.png"
@@ -533,7 +533,7 @@
         sm:col-start-9 sm:col-end-13
         xl:col-start-9 xl:col-end-13
         w-full shadow-2xl rounded-lg">
-          <div class="w-full h-9.11">
+          <div class="w-full h-9.11 xl:h-60">
             <img
               class="object-cover w-full h-full rounded-t-lg"
               src="./img/external-office.png"
@@ -569,7 +569,7 @@
                   flex
                   justify-center
                   items-center
-                  -bottom-3
+                  -bottom-2.5
                   right-0
                   w-24
                   h-5
@@ -595,8 +595,8 @@
       <div class="container mx-auto px-4">
 
         <div class="flex flex-col pt-8 mb-8">
-          <h3>Knowledge & Research</h3>
-          <p>Our latest research and thoughts on the property market.</p>
+          <h3 class="text-1.75 sm:text-34 leading-h1LineDesk text-menu-nav mb-3.5 text-left">Knowledge & <br class="block sm:hidden"> Research</h3>
+          <p class="text-18 leading-24 sm:leading-20 text-menu-nav text-left">Our latest research and <br class="block sm:hidden">  thoughts on the property <br class="block sm:hidden">  market.</p>
         </div>
 
         <div class=" 
@@ -605,12 +605,13 @@
         sm:grid-rows-2 sm:grid-cols-12
         xl:grid-rows-1 xl:grid-cols-12
         gap-y-8
-        sm:gap-x-2 sm:gap-y-2
-        xl:gap-y-2
-        pb-8">
+        sm:gap-x-4 sm:gap-y-4
+        xl:gap-y-4
+        pb-10">
+    
           
 
-          <!--card 1-->
+          <!--------------------------------------------------------card 1----------------------------------------->
           <div class="row-start-1 row-end-1
           sm:row-start-1 sm:row-end-1
           xl:row-start-1 xl:row-end-1
@@ -618,66 +619,83 @@
           sm:col-start-1 sm:col-end-7
           xl:col-start-1 xl:col-end-4
           w-full
-           shadow-2xl rounded-lg mt-10">
-            <div class="relative flex h-36">
+           shadow-xl rounded-lg">
+            <div class="relative flex h-190 w-full">
               <img
                 class="absolute object-cover w-full h-full rounded-t-lg"
                 src="./img/camera.png"
                 alt="camera"
               />
             </div>
-            <div class="p-3">
+            <div class="p-5">
+              
               <div class="flex flex-col">
-                <h3 class="mb-3.5">bg-countryside bg-cover</h3>
-                <p class="pb-2.5 border-b-2">3rd August 2018</p>
+                <h3 class="mb-2.5 h-14 text-20 leading-28 xxl:text-reports sm:leading-30 text-menu-nav">Be a tourist in your own town</h3>
+                <p class="mb-5 text-13 leading-20 text-menu-nav">3rd August 2018</p>
               </div>
 
-              <div class="grid grid-rows-2 grid-cols-2 gap-x-2 gap-y-2 mt-5">
+              <div class="flex flex-row flex-wrap w-200 ">
                 <div
                   class="
-                    row-start-1 row-end-1
-                    col-start-1 col-end-1
-                    w-20
+                  flex
+                  justify-center
+                  items-center
                     bg-knowdiv
-                    rounded-md
-                    text-center text-xs
-                    uppercase
+                    rounded-sb
+                    text-center 
+                    text-12
+                    text-baseText
+                    h-5
+                    px-2.5
+                    mb-2
+                    mr-1.5
                   "
                 >
-                  culture
+                <p class="uppercase">culture</p>
+                  
                 </div>
                 <div
                   class="
-                    row-start-1 row-end-1
-                    col-start-2 col-end-2
-                    w-20
+                  flex
+                  justify-center
+                  items-center
                     bg-knowdiv
-                    rounded-md
-                    text-center text-xs
-                    uppercase
+                    rounded-sm
+                    text-center 
+                    text-12
+                    text-baseText
+                    py-1.5
+                    h-5
+                    px-2.5
+                    mb-2
+                    mr-1.5
                   "
                 >
-                  residential
+                <p class="uppercase ">residential</p>
                 </div>
                 <div
                   class="
-                    row-start-2 row-end-2
-                    col-start-1 col-end-1
-                    w-20
+                  flex
+                  justify-center
+                  items-center
                     bg-knowdiv
-                    rounded-md
-                    text-center text-xs
-                    uppercase
+                    rounded-sm
+                    text-center 
+                    text-12
+                    text-baseText
+                    py-1.5
+                    h-5
+                    px-2.5
                   "
                 >
-                  touris
+                <p class="uppercase">tourist</p>
                 </div>
               </div>
             </div>
           </div>
           <!--//card 1//-->
 
-          <!--card 2-->
+          <!----------------------------------------------------------------card 2-------------------------------------------->
           <div class="row-start-2 row-end-2
           sm:row-start-1 sm:row-end-1
           xl:row-start-1 xl:row-end-1
@@ -685,68 +703,85 @@
           sm:col-start-7 sm:col-end-13
           xl:col-start-4 xl:col-end-7
           w-full
-           shadow-2xl rounded-lg">
-            <div class="relative flex h-36">
+           shadow-xl rounded-lg">
+            <div class="relative flex h-190 w-full">
               <img
                 class="absolute object-cover w-full h-full rounded-t-lg"
                 src="./img/front_house.png"
                 alt="interior house"
               />
             </div>
-            <div class="p-3">
+            <div class="p-5">
               <div class="flex flex-col">
-                <h3 class="mb-3.5">
-                  Focus on Battersea - The Pros of Life in Battersea
+                <h3 class="mb-2.5 h-14 text-20 leading-28 xxl:text-reports sm:leading-30 text-menu-nav">
+                  Focus on Battersea - The <br> Pros of Life in Battersea
                 </h3>
-                <p class="pb-2.5 border-b-2">3rd August 2018</p>
+                <p class="mb-5 text-13 leading-20 text-menu-nav">3rd August 2018</p>
               </div>
-
-              <div class="grid grid-rows-2 grid-cols-2 gap-x-2 gap-y-2 mt-5">
+              <div class="flex flex-row flex-wrap w-200">
                 <div
                   class="
-                    row-start-1 row-end-1
-                    col-start-1 col-end-1
-                    w-20
+                  flex
+                  justify-center
+                  items-center
                     bg-knowdiv
-                    rounded-md
-                    text-center text-xs
-                    uppercase
+                    rounded-sb
+                    text-center 
+                    text-12
+                    text-baseText
+                    py-1.5
+                    px-2.5
+                    
+                    h-5
+                    mb-2
+                    mr-1.5
                   "
                 >
-                  city living
+                <p class="uppercase">city living</p>
+                  
                 </div>
                 <div
                   class="
-                    row-start-1 row-end-1
-                    col-start-2 col-end-2
-                    w-20
+                  flex
+                  justify-center
+                  items-center
                     bg-knowdiv
-                    rounded-md
-                    text-center text-xs
-                    uppercase
+                    rounded-sm
+                    text-center 
+                    text-12
+                    text-baseText
+                    py-1.5
+                    px-2.5
+                    h-5
+                    mb-2
+                    mr-1.5
                   "
                 >
-                  london
+                <p class="uppercase ">london</p>
                 </div>
                 <div
                   class="
-                    row-start-2 row-end-2
-                    col-start-1 col-end-1
-                    w-20
+                  flex
+                  justify-center
+                  items-center
                     bg-knowdiv
-                    rounded-md
-                    text-center text-xs
-                    uppercase
+                    rounded-sm
+                    text-center 
+                    text-12
+                    text-baseText
+                    py-1.5
+                    px-2.5
+                    h-5
                   "
                 >
-                  residential
+                <p class="uppercase">residential</p>
                 </div>
               </div>
             </div>
           </div>
           <!--//card 2//-->
 
-          <!--card 3-->
+          <!-------------------------------------------------------------------------card 3--------------------------------------------->
           <div class="row-start-3 row-end-3
           sm:row-start-2 sm:row-end-2
           xl:row-start-1 xl:row-end-1
@@ -754,66 +789,84 @@
           sm:col-start-1 sm:col-end-7
           xl:col-start-7 xl:col-end-10
           w-full
-           shadow-2xl rounded-lg">
-            <div class="relative flex h-36">
+           shadow-xl rounded-lg">
+            <div class="relative flex h-190 w-full">
               <img
                 class="absolute object-cover w-full h-full rounded-t-lg"
                 src="./img/grain.png"
                 alt="interior house"
               />
             </div>
-            <div class="p-3">
+            <div class="p-5">
               <div class="flex flex-col">
-                <h3 class="mb-3.5">Scottish Farming Update | Summer 2018</h3>
-                <p class="pb-2.5 border-b-2">3rd August 2018</p>
+                <h3 class="mb-2.5 h-14 text-20 leading-28 xxl:text-reports sm:leading-30 text-menu-nav">Scottish Farming <br> Update | Summer 2018</h3>
+                <p class="mb-5 text-13 leading-20 text-menu-nav">3rd August 2018</p>
               </div>
 
-              <div class="grid grid-rows-2 grid-cols-2 gap-x-2 gap-y-2 mt-5">
+              <div class="flex flex-row flex-wrap w-52">
                 <div
                   class="
-                    row-start-1 row-end-1
-                    col-start-1 col-end-1
-                    w-20
+                  flex
+                  justify-center
+                  items-center
                     bg-knowdiv
-                    rounded-md
-                    text-center text-xs
-                    uppercase
+                    rounded-sb
+                    text-center 
+                    text-12
+                    text-baseText
+                    py-1.5
+                    px-2.5
+                    h-5
+                    mb-2
+                    mr-1.5
                   "
                 >
-                  farming
+                <p class="uppercase">farming</p>
+                  
                 </div>
                 <div
                   class="
-                    row-start-1 row-end-1
-                    col-start-2 col-end-2
-                    w-20
+                  flex
+                  justify-center
+                  items-center
                     bg-knowdiv
-                    rounded-md
-                    text-center text-xs
-                    uppercase
+                    rounded-sm
+                    text-center 
+                    text-12
+                    text-baseText
+                    py-1.5
+                    px-2.5
+                    h-5
+                    mb-2
+                    mr-1.5
                   "
                 >
-                  farming update
+                <p class="uppercase ">farming update</p>
                 </div>
                 <div
                   class="
-                    row-start-2 row-end-2
-                    col-start-1 col-end-1
-                    w-20
+                  flex
+                  justify-center
+                  items-center
                     bg-knowdiv
-                    rounded-md
-                    text-center text-xs
-                    uppercase
+                    rounded-sm
+                    text-center 
+                    text-12
+                    text-baseText
+                    mb-2
+                    h-5
+                    py-1.5
+                    px-2.5
                   "
                 >
-                  rural
+                <p class="uppercase">rural</p>
                 </div>
               </div>
             </div>
           </div>
           <!--//card 3//-->
 
-          <!--card 4-->
+          <!-------------------------------------------------------------card 4--------------------------------------------------->
           <div class="row-start-4 row-end-4
           sm:row-start-2 sm:row-end-2
           xl:row-start-1 xl:row-end-1
@@ -821,59 +874,77 @@
           sm:col-start-7 sm:col-end-13
           xl:col-start-10 xl:col-end-13
           w-full
-           shadow-2xl rounded-lg">
-            <div class="relative flex h-36">
+           shadow-xl rounded-lg">
+            <div class="relative flex h-190 w-full">
               <img
                 class="absolute object-cover w-full h-full rounded-t-lg"
                 src="./img/cottage.png"
                 alt="interior house"
               />
             </div>
-            <div class="p-3">
+            <div class="p-5">
               <div class="flex flex-col">
-                <h3 class="mb-3.5">The rise of the British Vineyard</h3>
-                <p class="pb-2.5 border-b-2">3rd August 2018</p>
+                <h3 class="mb-2.5 h-14 text-20 leading-28 xxl:text-reports sm:leading-30 text-menu-nav">The rise of the British Vineyard</h3>
+                <p class="mb-5 text-13 leading-20 text-menu-nav">3rd August 2018</p>
               </div>
 
-              <div class="grid grid-rows-2 grid-cols-2 gap-x-2 gap-y-2 mt-5">
+              <div class="flex flex-row flex-wrap w-200">
                 <div
                   class="
-                    row-start-1 row-end-1
-                    col-start-1 col-end-1
-                    w-20
+                  flex
+                  justify-center
+                  items-center
                     bg-knowdiv
-                    rounded-md
-                    text-center text-xs
-                    uppercase
+                    rounded-sb
+                    text-center 
+                    text-12
+                    text-baseText
+                    py-1.5
+                    px-2.5
+                    h-5
+                    mb-2
+                    mr-1.5
                   "
                 >
-                  Residential
+                <p class="uppercase">residential</p>
+                  
                 </div>
                 <div
                   class="
-                    row-start-1 row-end-1
-                    col-start-2 col-end-2
-                    w-20
+                  flex
+                  justify-center
+                  items-center
                     bg-knowdiv
-                    rounded-md
-                    text-center text-xs
-                    uppercase
+                    rounded-sm
+                    text-center 
+                    text-12
+                    text-baseText
+                    py-1.5
+                    px-2.5
+                    h-5
+                    mb-2
+                    mr-1.5
                   "
                 >
-                  rural
+                <p class="uppercase ">rural</p>
                 </div>
                 <div
                   class="
-                    row-start-2 row-end-2
-                    col-start-1 col-end-1
-                    w-20
+                  flex
+                  justify-center
+                  items-center
                     bg-knowdiv
-                    rounded-md
-                    text-center text-xs
-                    uppercase
+                    rounded-sm
+                    text-center 
+                    text-12
+                    text-baseText
+                    h-5
+                    py-1.5
+                    px-2.5
+                    
                   "
                 >
-                  viticulture
+                <p class="uppercase">viticolture</p>
                 </div>
               </div>
             </div>
@@ -882,8 +953,12 @@
         </div>
       </div>
       
-      <div class="flex justify-end p-8 mb-8">
-        <h3>Read all <span>></span></h3>
+      <div class="flex justify-end p-8 mb-8 items-center">
+        <h3  class="text-1 leading-h1LineDesk text-teext1 mr-2.5">Read all</h3>
+        <div class="relative w-1.5 h-arrow flex items-center">
+          <hr class="absolute w-1.5 h-arrow  flex-shrink text-text1 transform rotate-45">                  
+          <hr class="absolute w-1.5 h-arrow flex-shrink text-text1 transform rotate-135">               
+      </div>
       </div>
     </section>
 
@@ -1173,7 +1248,8 @@
           </div>
         </div>
         <div class="flex justify-start xl:justify-end p-8 mb-8">
-          <h3>Read all <span>></span></h3>
+          <h3>Read all</h3>
+         
         </div>
       </div>
     </section>
